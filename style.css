@@ -1,31 +1,96 @@
-
-/* Resets */
-a {
-    color: forestgreen;
-    text-decoration: none;
-}
-ul {
-    margin:0;
-}
-
-
-
-
-
 /* Classes */
-.bodystyle {
-    border: 1px black solid;
-    margin: 24px;
-    padding: 24px;
-
-}
-.headerstyle {
-    display: flex;
-    justify-content: space-between;
+/* ALIGN */
+.alignic {
     align-items: center;
 }
-.nav {
+/* BORDER */
+.b1 {
+    border:1px;
+}
+.bs{
+    border: solid;
+}
+/* COLOR */
+.colorgreendark {
+    color: rgb(21, 87, 21);
+}
+.colorgreenmed {
+    color: forestgreen;
+}
+.colorgreenlight {
+    color: rgb(51, 202, 51);
+}
+.colorblack {
+    color: black
+}
+.colorgraylight {
+    color: gainsboro
+}
+.colorgraymed {
+    color: gray
+}
+.colorgraydark {
+    color: rgb(78, 78, 78)
+}
+
+
+
+/* DISPLAY */
+.flex {
     display:flex;
-    list-style: none;
+}
+
+/* JUSTIFY */
+.justifycsb {
+    justify-content: space-between;
+}
+.justifycc {
+    justify-content: center;
+}
+.justifycs {
+    justify-content: start;
+}
+.justifycsa {
+    justify-content: space-around;
+}
+.justifycse {
+    justify-content: space-evenly;
+}
+
+/* LIST */
+.listsn {
+    list-style:none;
+}
+/* MARGIN */
+.m {
+    margin: 24px;
+}
+/* PADDING */
+.p {
+    padding: 24px;
+}
+.p- {
+    padding: 12px;
+}
+.p-- {
+    padding: 6px;
+}
+.p+ {
+    padding: 48px;
+}
+
+
+/* TEXT */
+.textdecn {
+    text-decoration: none;
+}
+
+
+
+.portfolio-textbody {
     
+}
+.portfolio-image {
+    height: 25%;
+    width: 15%;
 }
