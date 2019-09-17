@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+:root {
+	font-size: 10px;
+	--heading-height: 30em;
+}
+
+body {
+	font-family: "Roboto", Arial, sans-serif;
+	min-height: 100vh;
+	background-color: #101010;
+}
+
+.column {
+	flex-flow: column;
+}
+
+.head {
+	position: fixed;
+	width: 100%;
+	content: "";
+	left: 0;
+	top: -35%;
+	height: calc(var(--heading-height) + 10em);
+	z-index: 1;
+	transform: skewY(-3deg);
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(https://images.unsplash.com/photo-1495464101292-552d0b52fe41?auto=format&fit=crop&w=1350&q=80)
+			no-repeat center,
+		linear-gradient(#4e4376, #2b5876);
+	background-size: cover;
+	border-bottom: 0.2em solid #fff;
+}
+
+.navorg {
+	/* Header Text */
+	z-index: 2;
+	transform: skewY(3deg);
+	padding: 33rem 0 0 4.5rem;
+	align-items: start;
+	font-size: calc(1.4em + 1.3vw);
+	justify-content: space-between;
+}
+
+.myname {
+	font-size: calc(1em + 0.65vw);
+	font-weight: 250;
+	letter-spacing: 0.01em;
+	text-shadow: 0.022em 0.022em 0.022em #111;
+	color: #fff;
+}
+.nav {
+	color: #fff;
+	font-size: calc(0.35em + 0.325vw);
+}
+
+.footcontainer {
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+}
+
+.foottext {
+	color: #fff;
+	font-size: calc(1.4em + 1.3vw);
+}
+
+.p {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.flex {
+	display: flex;
+}
+
+.body-main {
+	padding: calc((var(--heading-height) + 1.5vw)/1.25) 4em 0;
+}
+
+p {
+	font-size: calc(2em + 0.25vw);
+	font-weight: 400;
+	line-height: 2;
+	margin-bottom: 1.5em;
+	color: #fcfcfc;
+}
+
+/********************************************/
+.relative {
+	position: relative;
+}
+.bgcolorblack {
+	background-color:#101010;
+}
+.botmargin {
+  	margin-bottom: 15rem;
+}
+.footcontainer2 {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 15rem;
+	width:100%;
+	background: #222;
+	border-bottom: 1px solid #666;
+	font-size: calc(1.4em + 1.3vw);
+	font-weight: 350;
+	letter-spacing: 0.01em;
+	text-shadow: 0.022em 0.022em 0.022em #111;
+	color: #fff;
+	font: 1rem;
+	justify-content:center;
+	align-items:center;
+  	z-index:-1;
+}
+.foottext2 {
+	
+}
