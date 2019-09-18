@@ -2,7 +2,7 @@
 
 :root {
 	font-size: 10px;
-	--heading-height: 30em;
+	--heading-height: 25em; /* Variable for Header height */
 }
 
 body {
@@ -20,12 +20,16 @@ body {
 	width: 100%;
 	content: "";
 	left: 0;
-	top: -35%;
-	height: calc(var(--heading-height) + 10em);
+	top: -45%; /* SHIFTS ENTIRE HEADER including text */
+	height: calc(var(--heading-height) + 15em); /* SHIFTS HEADER IMAGE ONLY*/
 	z-index: 1;
 	transform: skewY(-3deg);
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		url(https://images.unsplash.com/photo-1495464101292-552d0b52fe41?auto=format&fit=crop&w=1350&q=80)
+		/* url("../images/eclipse.jpg") */
+		url("../images/eclipse2.jpg")
+		/* url("../images/pure.jpg") */
+		/* url("../images/aurora.jpg") */
+		/* url(https://images.unsplash.com/photo-1495464101292-552d0b52fe41?auto=format&fit=crop&w=1350&q=80) */
 			no-repeat center,
 		linear-gradient(#4e4376, #2b5876);
 	background-size: cover;
@@ -50,40 +54,228 @@ body {
 	color: #fff;
 }
 .nav {
+	/* navigation text */
 	color: #fff;
 	font-size: calc(0.35em + 0.325vw);
 }
 
-.footcontainer {
-	justify-content: center;
-	align-items: center;
-	padding: 2rem;
+/* **************************** ADD HOVER EFFECT **************************** */
+.aboutme:hover {
+	/* navigation text */
+	color: rgb(175, 175, 175);
+	font-size: calc(0.6em + 0.6vw);
+}
+.portfolio:hover {
+	/* navigation text */
+	color: rgb(175, 175, 175);
+	font-size: calc(0.6em + 0.6vw);
+}
+.contact:hover {
+	/* navigation text */
+	color: rgb(175, 175, 175);
+	font-size: calc(0.6em + 0.6vw);
 }
 
-.foottext {
-	color: #fff;
-	font-size: calc(1.4em + 1.3vw);
+
+.pure {
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
+
+.bd1 {
+    border:1px;
+}
+.borderplain {
+	border-style:solid;
+	border-color:gray;
+}
+
+
+/* ALIGN */
+.aic {
+    align-items: center;
+}
+.ais {
+    align-items: start;
+}
+
+/* Atomic JUSTIFY */
+.jcsb {
+    justify-content: space-between;
+}
+.jcc {
+    justify-content: center;
+}
+.jcs {
+    justify-content: start;
+}
+.jcsa {
+    justify-content: space-around;
+}
+.jcse {
+    justify-content: space-evenly;
+}
+
+/* Atomic MARGINs */
+.m {
+    margin: 1rem;
+}
+.mplus {
+    margin: 1.66rem;
+}
+.m- {
+    margin: .809rem;
+}
+.ml {
+    margin-left: 1rem;
+}
+.mlplus {
+    margin-left: 1.66rem;
+}
+.ml- {
+    margin-left: .809rem;
+}
+.mr {
+    margin-right: 1rem;
+}
+.mrplus {
+    margin-right: 1.66rem;
+}
+.mr- {
+    margin-right: .809rem;
+}
+.mt {
+    margin-top: 1rem;
+}
+.mtplus {
+    margin-top: 1.66rem;
+}
+.mt2plus {
+    margin-top: 3.32rem;
+}
+.mt- {
+    margin-top: .809rem;
+}
+.mb {
+    margin-bottom: 1rem;
+}
+.mbplus {
+    margin-bottom: 1.66rem;
+}
+.mb- {
+    margin-bottom: .809rem;
+}
+.w {
+	width:1rem;
+}
+.w2 {
+	width:2rem;
+}
+.w3 {
+	width:3rem;
+}
+.h {
+	height:1rem;
+}
+.h2 {
+	height:2rem;
+}
+.h3 {
+	height:3rem;
+}
+.navsizing {
+	/* text-align:center; */
+	width:calc(8rem + 0.5vw);
+	height:calc(4rem + 0.5vw);
+	padding-left:calc(1rem + 1vw);
+	padding-right:calc(1rem + 1vw);
+}
+
+/* Atomic PADDING */
 .p {
-	padding-left: 2rem;
-	padding-right: 2rem;
+    padding: 1rem;
+}
+.p- {
+    padding: .809rem;
+}
+.p-- {
+    padding: .404rem;
+}
+.pplus {
+    padding: 1.66rem;
+}
+.pl {
+    padding-left: 1rem;
+}
+.plplus {
+    padding-left: 1.66rem;
+}
+.pl- {
+    padding-left: .809rem;
+}
+.pr {
+    padding-right: 1rem;
+}
+.prplus {
+    padding-right: 1.66rem;
+}
+.pr- {
+    padding-right: .809rem;
+}
+.pt {
+    padding-top: 1rem;
+}
+.ptplus {
+    padding-top: 1.66rem;
+}
+.pt2plus {
+    padding-top: 3.32rem;
+}
+.pt- {
+    padding-top: .809rem;
+}
+.pb {
+    padding-bottom: 1rem;
+}
+.pbplus {
+    padding-bottom: 1.66rem;
+}
+.pb- {
+    padding-bottom: .809rem;
 }
 
+/* White text shortcut class */
+.cwhite {
+	color:white;
+}
+
+/* flexbox shortcut classes */
 .flex {
 	display: flex;
 }
+.wrap {
+	flex-wrap: wrap;
+}
+
 
 .body-main {
 	padding: calc((var(--heading-height) + 1.5vw)/1.25) 4em 0;
 }
 
-p {
+/* body text overwrites */
+.paragraph {
 	font-size: calc(2em + 0.25vw);
 	font-weight: 400;
 	line-height: 2;
 	margin-bottom: 1.5em;
 	color: #fcfcfc;
+}
+/* TEXT */
+.tdn {
+    text-decoration: none;
+}
+.taj {
+    text-align: justify;
 }
 
 /********************************************/
