@@ -1,12 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Manjari:400,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
 
 :root {
 	font-size: 10px;
-	--heading-height: 25em; /* Variable for Header height */
+	--heading-height: 30em; /* Variable for Header height */
 }
 
 body {
-	font-family: "Roboto", Arial, sans-serif;
+	font-family: "Ubuntu", Arial, sans-serif;
 	min-height: 100vh;
 	background-color: #101010;
 }
@@ -20,17 +23,15 @@ body {
 	width: 100%;
 	content: "";
 	left: 0;
-	top: -45%; /* SHIFTS ENTIRE HEADER including text */
+	/* SHIFTS ENTIRE HEADER including text */
+	top: -45%;
+
 	height: calc(var(--heading-height) + 15em); /* SHIFTS HEADER IMAGE ONLY*/
 	z-index: 1;
 	transform: skewY(-3deg);
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		/* url("../images/eclipse.jpg") */
 		url("../images/eclipse2.jpg")
-		/* url("../images/pure.jpg") */
-		/* url("../images/aurora.jpg") */
-		/* url(https://images.unsplash.com/photo-1495464101292-552d0b52fe41?auto=format&fit=crop&w=1350&q=80) */
-			no-repeat center,
+		no-repeat center,
 		linear-gradient(#4e4376, #2b5876);
 	background-size: cover;
 	border-bottom: 0.2em solid #fff;
@@ -40,7 +41,7 @@ body {
 	/* Header Text */
 	z-index: 2;
 	transform: skewY(3deg);
-	padding: 33rem 0 0 4.5rem;
+	padding: 37rem 0 0 4.5rem; /* SHIFTS HEADER TEXT ONLY */
 	align-items: start;
 	font-size: calc(1.4em + 1.3vw);
 	justify-content: space-between;
@@ -57,6 +58,13 @@ body {
 	/* navigation text */
 	color: #fff;
 	font-size: calc(0.35em + 0.325vw);
+}
+.navsizing {
+	/* text-align:center; */
+	width:calc(13rem + 1vw);
+	height:calc(4rem + 0.5vw);
+	padding-left:calc(1rem + 1vw);
+	padding-right:calc(1rem + 1vw);
 }
 
 /* **************************** ADD HOVER EFFECT **************************** */
@@ -78,7 +86,11 @@ body {
 
 
 .pure {
-	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+	float: left;
+	width: 40%;
+	margin: 2rem;
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 173, 0.233);
+	border-style: double;
 }
 
 
@@ -183,13 +195,6 @@ body {
 .h3 {
 	height:3rem;
 }
-.navsizing {
-	/* text-align:center; */
-	width:calc(8rem + 0.5vw);
-	height:calc(4rem + 0.5vw);
-	padding-left:calc(1rem + 1vw);
-	padding-right:calc(1rem + 1vw);
-}
 
 /* Atomic PADDING */
 .p {
@@ -267,6 +272,7 @@ body {
 	font-size: calc(2em + 0.25vw);
 	font-weight: 400;
 	line-height: 2;
+	padding-left: 2em;
 	margin-bottom: 1.5em;
 	color: #fcfcfc;
 }
