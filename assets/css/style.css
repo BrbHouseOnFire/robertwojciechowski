@@ -24,9 +24,7 @@ body {
 	top: -45%;
 
 	/* SHIFTS HEADER IMAGE ONLY*/
-	height: calc(var(--heading-height) + 15em); 
-	/* height: 0.5vh; */
-
+	height: calc(var(--heading-height) + 15em);
 
 	z-index: 1;
 	transform: skewY(-3deg);
@@ -71,6 +69,7 @@ body {
 
 /* **************************** NAME HOVER EFFECT **************************** */
 .myname {
+	/* add multi-browser support? */
 	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 20%, #000 50%, rgba(0,0,0,.6) 80%);
 	-webkit-mask-size: 200%;
 	animation: shine 1.5s infinite;
@@ -78,9 +77,11 @@ body {
 /* .myname:hover {  } */
 @-webkit-keyframes shine {
 	from {
+		/* add multi-browser support? */
 	  -webkit-mask-position: 150%;
 	}
 	to {
+		/* add multi-browser support? */
 	  -webkit-mask-position: -50%;
 	}
 }
@@ -90,6 +91,7 @@ body {
 	/* navigation text */
 	font-size: calc(0.6em + 0.6vw);
 	transition: 0.3s;
+	/* add multi-browser support? */
 	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 20%, #000 50%, rgba(0,0,0,.6) 80%);
 	-webkit-mask-size: 200%;
 	animation: shine 1.5s infinite;
@@ -103,6 +105,7 @@ body {
 	/* navigation text */
 	font-size: calc(0.6em + 0.6vw);
 	transition: 0.3s;
+	/* add multi-browser support? */
 	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 20%, #000 50%, rgba(0,0,0,.6) 80%);
 	-webkit-mask-size: 200%;
 	animation: shine 1.5s infinite;
@@ -117,6 +120,7 @@ body {
 	/* navigation text */
 	font-size: calc(0.6em + 0.6vw);
 	transition: 0.3s;
+	/* add multi-browser support? */
 	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 20%, #000 50%, rgba(0,0,0,.6) 80%);
 	-webkit-mask-size: 200%;
 	animation: shine 1.5s infinite;
@@ -338,7 +342,7 @@ body {
 
 /* Text body padding */
 .body-main {
-	padding: calc((var(--heading-height) + 1.5vw)/1.25) 4em 0;
+	padding: calc((var(--heading-height) + 1.5vw) / 1.5) 4em 0;
 }
 
 /* body text overwrites */
@@ -359,7 +363,7 @@ body {
     text-align: justify;
 }
 
-/********************************************/
+
 .relative {
 	position: relative;
 }
@@ -389,10 +393,10 @@ body {
   	z-index:-1;
 }
 
-/* .foottext2 {} */
 
 /* shine */
 .shine:hover {
+	/* add multi-browser support? */
 	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
 	-webkit-mask-size: 200%;
 	animation: shine 2s infinite;
@@ -400,10 +404,12 @@ body {
   
   @-webkit-keyframes shine {
 	from {
+		/* add multi-browser support? */
 	  -webkit-mask-position: 150%;
 	}
 	
 	to {
+		/* add multi-browser support? */
 	  -webkit-mask-position: -50%;
 	}
   }
@@ -427,6 +433,7 @@ body {
 	width:100%;
 	position:relative;
 	padding:1rem 3rem;
+	/* multi-browser support */
 	 -moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
 	-o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
 	-webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
@@ -453,6 +460,7 @@ body {
   .bar-anchor:hover .transition-bar{
 	width:150%;
 	left:125%;
+	/* multi-browser support */
 	-moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
 	-o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
 	-webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
@@ -509,16 +517,135 @@ body {
 	width: 100%;
 }
 
-/* .portfoliocontainerspacer {
 
-} */
+/************************** Contact Page Specific CSS **************************/
+
+.footcontainer3 {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 15rem;
+	width:100%;
+	background: #222;
+	border-bottom: 1px solid #666;
+	font-size: calc(1.4em + 1.3vw);
+	font-weight: 350;
+	letter-spacing: 0.01em;
+	text-shadow: 0.022em 0.022em 0.022em #111;
+	color: #fff;
+	font: 1rem;
+	justify-content:center;
+	align-items:center;
+}
+
+
+.transition-bar2{
+	position: absolute;
+	top: 0;
+	left: 0%;
+	width: 0;
+	height: 100%;
+	background: #ffffff;
+}
+.bar-anchor:hover .transition-bar2{
+  width:150%;
+  left:125%;
+  /* multi-browser support */
+  -moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/************************** Contact Form **************************/
+
+.wrapper {
+	margin: 5rem auto 0;
+	width: 70%;
+	max-width: 90vw;
+	display: flex;
+	justify-content: center;
+  }
+  
+  form {
+	width: 100%;
+	margin: 1rem;
+  }
+  
+  form * {
+	font-size: 2rem;
+	letter-spacing: 0.075em;
+	font-weight: 300;
+	cursor: pointer;
+	text-decoration: none;
+  }
+  
+  form .field {
+	width: 100%;
+	position: relative;
+	margin-bottom: 2rem;
+  }
+  
+  form .field label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg, #112569, #09691e);
+	width: 100%;
+	height: 6rem;
+	transition: 333ms ease-in-out;
+	text-align: center;
+	padding: 2rem 0;
+  }
+  
+  form .field input[type="text"],
+  form .field textarea {
+	border: none;
+	width: 100%;
+	height: 6rem;
+	margin: 0;
+	padding-left: 19.5%;
+	color: #313a3d;
+  }
+  
+  form #msg {
+	height: 6rem;
+	resize: none;
+	transition: all 333ms ease-in-out;
+	padding-top: 1rem;
+  }
+  form textarea:focus#msg,
+  form textarea:not(:placeholder-shown)#msg {
+	height: 10rem;
+  }
+  form input[type="text"]:focus + label,
+  form input[type="text"]:not(:placeholder-shown) + label,
+  form textarea:focus + label,
+  form textarea:not(:placeholder-shown) + label,
+  form .field:hover label {
+	width: 18%;
+  }
+  form input[type="submit"] {
+	background: linear-gradient(90deg, #112569, #09691e);
+	-webkit-appearance: none;
+	border: none;
+	position: relative;
+	padding: 1rem 3.5rem;
+	transition: all 0.3s ease-in-out;
+  }
+  form input[type="submit"]:hover,
+  form input[type="submit"]:focus {
+	background: #ffffff; 
+  }
 
 
 
 
-
-
-
-
-
-
+/************************** Responsive Design Adjustments **************************/
+/* INCOMPLETE */
+/* @media screen and (max-width: 768px) { }*/
+/* @media screen and (max-width: 480px) { }*/
+/* Convert sizing to utilize vw and vh wherever possible */
+/* Index Body Text spacing/sizing */
+/* Portfolio Image spacing proportions */
+/* Completely redesign header? */
