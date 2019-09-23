@@ -24,7 +24,7 @@ body {
 	top: -45%;
 
 	/* SHIFTS HEADER IMAGE ONLY*/
-	height: calc(var(--heading-height) + 15em);
+	height: 63vh;
 
 	z-index: 1;
 	transform: skewY(-3deg);
@@ -40,7 +40,9 @@ body {
 	/* Header Text */
 	z-index: 2;
 	transform: skewY(3deg);
-	padding: 37rem 0 0 4.5rem; /* SHIFTS HEADER TEXT ONLY */
+	
+	/* SHIFTS HEADER TEXT ONLY */
+	padding: 50vh 0 0 4.5rem; 
 	align-items: start;
 	font-size: calc(1.4em + 1.3vw);
 	justify-content: space-between;
@@ -342,7 +344,7 @@ body {
 
 /* Text body padding */
 .body-main {
-	padding: calc((var(--heading-height) + 1.5vw) / 1.5) 4em 0;
+	padding: 25vh 3vw 0;
 }
 
 /* body text overwrites */
