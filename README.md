@@ -7,7 +7,6 @@
 /* Media Queries */
 /* @media screen and (max-width: 768px) { }*/
 /* @media screen and (max-width: 480px) { }*/
-
 /* OR within the design itself */
 /* X    Done	Convert sizing to utilize vw and vh wherever possible */
 /* X    Done	Index Body Text spacing/sizing */
@@ -24,5 +23,7 @@ Responsive Design Notes and general improvements:
 
 /* Possible To Do Items */
 /* 
-- Add a link to my github
-- Redesign header under extreme screen sizes through media queries.
+- Cosmetic: Add a link to my github
+- Responsive: Redesign header under extreme screen sizes through media queries.
+- Responsive: Redesign footer under extreme screen sizes through media queries. - Already applied to Contact page.
+*/
