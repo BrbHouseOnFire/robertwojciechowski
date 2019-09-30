@@ -2,7 +2,7 @@
 
 body {
 	font-family: "Ubuntu", Arial, sans-serif;
-	min-height: 100vh;
+	min-height: 80vh;
 	background-color: #101010;
 }
 
@@ -150,132 +150,24 @@ body {
     justify-content: space-evenly;
 }
 
-/* MARGINs */
-.m {
-    margin: 1rem;
-}
-.mplus {
-    margin: 1.66rem;
-}
-.m- {
-    margin: .809rem;
-}
-.ml {
-    margin-left: 1rem;
-}
-.mlplus {
-    margin-left: 1.66rem;
-}
-.ml- {
-    margin-left: .809rem;
-}
-.mr {
-    margin-right: 1rem;
-}
-.mrplus {
-    margin-right: 1.66rem;
-}
-.mr- {
-    margin-right: .809rem;
-}
-.mt {
-    margin-top: 1rem;
-}
-.mtplus {
-    margin-top: 1.66rem;
-}
-.mt2plus {
-    margin-top: 3.32rem;
-}
-.mt- {
-    margin-top: .809rem;
-}
-.mb {
-    margin-bottom: 1rem;
-}
-.mbplus {
-    margin-bottom: 1.66rem;
-}
-.mb- {
-    margin-bottom: .809rem;
-}
+
 .w1\/1 {
 	width:100%;
-}
-
-.w {
-	width:1rem;
-}
-.w2 {
-	width:2rem;
-}
-.w3 {
-	width:3rem;
 }
 .h1\/1 {
 	height:100%;
 }
-.h {
-	height:1rem;
+.m- {
+    margin: calc(0.3vw + 0.3vh);
 }
-.h2 {
-	height:2rem;
+.m {
+    margin: 1rem;
 }
-.h3 {
-	height:3rem;
-}
-
-/* PADDING */
 .p {
     padding: 1rem;
 }
-.p- {
-    padding: .809rem;
-}
-.p-- {
-    padding: .404rem;
-}
-.pplus {
-    padding: 1.66rem;
-}
-.pl {
-    padding-left: 1rem;
-}
-.plplus {
-    padding-left: 1.66rem;
-}
-.pl- {
-    padding-left: .809rem;
-}
-.pr {
-    padding-right: 1rem;
-}
-.prplus {
-    padding-right: 1.66rem;
-}
-.pr- {
-    padding-right: .809rem;
-}
-.pt {
-    padding-top: 1rem;
-}
-.ptplus {
-    padding-top: 1.66rem;
-}
-.pt2plus {
-    padding-top: 3.32rem;
-}
-.pt- {
-    padding-top: .809rem;
-}
-.pb {
-    padding-bottom: 1rem;
-}
 .pbplus {
     padding-bottom: 1.66rem;
-}
-.pb- {
-    padding-bottom: .809rem;
 }
 
 /* White text shortcut */
@@ -293,7 +185,7 @@ body {
 
 /* Text body padding */
 .body-main {
-	padding: calc(4vh + 11vw) 1vw 0;
+	padding: calc(8vh + 11vw) 1vw 0;
 }
 
 /* body text overwrites */
@@ -568,3 +460,32 @@ body {
 	background: #ffffff; 
   }
 
+/* Footer adjustments for small screen sizes */
+@media screen and (max-width: 1024px) { 
+	.footcontainer2 {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 20vh;
+		width:100%;
+		justify-content:center;
+		align-items:center;
+	}
+
+	.transition-bar{
+		position: absolute;
+		top: 0;
+		left: 0%;
+		width: 0;
+		height: 100%;
+		background: #ffffff;
+	}
+	.bar-anchor:hover .transition-bar{
+	width:150%;
+	left:125%;
+	-moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	-o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	-webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	}
+}
