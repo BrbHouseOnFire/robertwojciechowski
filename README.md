@@ -1,6 +1,6 @@
 # robertwojciechowski
 
--************************* Responsive Design Adjustments **************************
+************************* Responsive Design Adjustments **************************
 - v1.2 complete
 
 - X    Done @media screen and (max-width: 1024px) { }
